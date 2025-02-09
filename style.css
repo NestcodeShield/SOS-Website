@@ -1,0 +1,157 @@
+body,html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+h1, h2 {
+  font-family: "Bebas Neue", serif;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+
+
+header, nav, .nav-options {
+  display: flex;
+}
+
+nav {
+  width: 1200px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold  ;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 30px ;
+  padding: 0;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: #FFB548;
+}
+
+.nav-options {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nav-options span {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.nav-options label, a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-options select {
+  border: none;
+  font-size: 25px;
+  background: none;
+  color: white;
+  outline: none;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.nav-options select option {
+  background-color: rgba(0, 0, 0, 0.934);
+  border: none;
+  outline: none;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.container-one {
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 330px;
+}
+.container-one h1 {
+  margin: 0;
+  line-height: 80px;
+}
+
+.container-one p {
+  font-family: "Bebas Neue", serif;
+  font-weight: 500;
+  font-size: 28px;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.container-one button {
+  padding: 20px 30px;
+  color: black;
+  background-color: #FFB548;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 30px 0;
+  font-size: 20px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.container-one button:hover {
+  background-color: white;
+}
+
+.slider-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 300%; /* В 3 раза шире экрана */
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+.slide.active {
+  opacity: 1;
+}
