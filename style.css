@@ -1,6 +1,8 @@
 body,html {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -14,15 +16,19 @@ header {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 1080px;
+  max-height: 1080px;
+  height: 100vh;
   z-index: 1;
 }
+
 
 h1, h2 {
   font-family: "Bebas Neue", serif;
   font-size: 80px;
   font-weight: 500;
   letter-spacing: 3px;
+  line-height: 80px;
+  margin: 0;
 }
 
 
@@ -39,6 +45,7 @@ nav {
   font-family: "Open Sans", sans-serif;
   font-weight: bold  ;
   padding: 20px;
+  z-index: 1;
 }
 
 nav ul {
@@ -64,6 +71,8 @@ nav li:hover {
   flex-direction: row;
   justify-content: space-between;
   gap: 10px;
+  z-index: 1;
+  
 }
 
 .nav-options span {
@@ -152,7 +161,7 @@ nav li:hover {
 
 .slide {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
@@ -170,10 +179,58 @@ nav li:hover {
   padding: 30px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .about-game {
   background-image: url(/images/backgrounds/background-section1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 1080px;
+  height: 100vh;
+  max-height: 1080px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about {
+  color: white;
+  width: 40%;
+  max-width: 600px;
+}
+
+.text-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+.text-about p {
+  width: 50%;
+ position: relative;
+ left: 50%;
+}
+
+.line-container {
+  height: 2px;
+  background-color: white;
+  width: 150%;
+}
+
+.head-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.head-about p {
+  font-family: "Bebas Neue", serif;
+  font-size: 24px;
+  margin: 0;
 }
